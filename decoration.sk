@@ -7,8 +7,8 @@ unchanged decoratives:
 	(workbench¦es|crafting table¦s) = minecraft:crafting_table
 	(soil|farmland) [block¦s] = minecraft:farmland
 	cactus¦es = minecraft:cactus
-	[huge] brown mushroom block¦s = minecraft:brown_mushroom_block
-	[huge] red mushroom block¦s = minecraft:red_mushroom_block
+	(huge|full) brown mushroom block¦s = minecraft:brown_mushroom_block
+	(huge|full) red mushroom block¦s = minecraft:red_mushroom_block
 	vine¦s = minecraft:vine
 	enchant(ment|ing) table¦s = minecraft:enchanting_table
 	[empty] flower pot¦s = minecraft:flower_pot_block
@@ -226,6 +226,27 @@ decoratives after flattening:
 
 	# Huge mushroom stems are their own block now
 	[huge] mushroom stem¦s = minecraft:mushroom_stem
+	{east}:
+		e[ast] = -[east=true]
+		{default} = -[east=false]
+	{west}:
+		w[est] = -[west=true]
+		{default} = -[west=false]
+	{north}:
+		n[orth] = -[north=true]
+		{default} = -[north=false]
+	{south}:
+		s[outh] = -[south=true]
+		{default} = -[south=false]
+	{up}:
+		u[p] = -[up=true]
+		{default} = -[up=false]
+	{down}:
+		d[own] = -[down=true]
+		{default} = -[down=false]
+	{east} {west} {north} {south} {up} {down} red mushroom block = minecraft:red_mushroom_block
+	{east} {west} {north} {south} {up} {down} brown mushroom block = minecraft:brown_mushroom_block
+	# the full mushroom block is defined above 
 
 	# End Portal Frame
 	{end portal eye state}:
